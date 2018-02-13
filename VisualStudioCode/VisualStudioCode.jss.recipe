@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of VisualStudioCode and makes a pkg of it Then, uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.lashomb-recipes.jss.VisualStudioCode</string>
+	<string>com.github.lashomb.jss.VisualStudioCode</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -28,7 +28,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.killahquam.pkg.visualstudiocode</string>
+	<string>com.github.lashomb.pkg.VisualStudioCode</string>
 	<key>Process</key>
 	<array>
 		<dict>

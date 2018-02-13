@@ -5,11 +5,11 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Yammer and makes a pkg. Then, uploads to the JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.lashomb-recipes.jss.Yammer</string>
+	<string>com.github.lashomb.jss.Yammer</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Developer</string>
+		<string>Productivity</string>
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
