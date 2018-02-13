@@ -15,13 +15,13 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>VisualStudioCode</string>
+		<string>Yammer</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>VisualStudioCode is a platform for team communication: everything in one place, instantly searchable, available wherever you go.</string>
+		<string>Yammer is a platform for team communication: everything in one place, instantly searchable, available wherever you go.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Yammer.png</string>
 	</dict>
