@@ -68,7 +68,7 @@ class VersionRemix(Processor):
     description = __doc__
 
     def main(self):
-        find = self.env.get("find", "")
+        find = self.env.get("find")
         if find:
             replace = self.env.get("replace")
             self.env["version"] = self.env["version"].replace(find, replace)
