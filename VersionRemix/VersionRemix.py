@@ -69,8 +69,8 @@ class VersionRemix(Processor):
 
     def main(self):
         find = self.env.get("find")
-        if find:
-            replace = self.env.get("replace")
+        replace = self.env.get("replace", ".")
+        if self.env.get("replace"):
             self.env["version"] = self.env["version"].replace(find, replace)
         split_on = self.env.get("split_on", " ")
         index = self.env.get("index", 0)
