@@ -60,8 +60,8 @@ class VersionRemix(Processor):
     def main(self):
         find = self.env.get("find")
         substitute = self.env.get("substitute", ".")
-        self.env["version"] = self.env["version"].replace(find, substitute)
-        self.output("Version: %s" % self.env["version"])
+        # self.env["version"] = self.env["version"].replace(find, substitute)
+        self.output("Version: %s" % self.env["version"].replace(find, substitute))
 
 
 if __name__ == "__main__":
