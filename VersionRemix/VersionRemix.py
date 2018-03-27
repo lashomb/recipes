@@ -38,16 +38,26 @@ class VersionRemix(Processor):
             "required": True,
             "description": "The version string that needs splitting."
         },
+        "split_on": {
+            "required": False,
+            "description": "The character(s) to use for splitting the "
+                           "version. (Defaults to a space.)"
+        },
         "find": {
             "required": False,
             "description": "The character(s) to find in the "
                            "version. Used with 'replace'."
         },
-        "substitute": {
+        "replace": {
             "required": False,
             "description": "The character(s) to replace in the "
                            "version. Works with 'find'. "
                            "(Defaults to a decimal point.)"
+        },
+        "index": {
+            "required": False,
+            "description": "The index of the version string to be "
+                           "returned. (Defaults to 0.)"
         }
     }
     output_variables = {
@@ -58,10 +68,13 @@ class VersionRemix(Processor):
     description = __doc__
 
     def main(self):
-        find = self.env.get("find")
-        substitute = self.env.get("substitute", ".")
-        # self.env["version"] = self.env["version"].replace(find, substitute)
-        self.output("Version: %s" % self.env["version"].replace(find, substitute))
+        replace = self.env.get("replace", ".")
+        if self.env.get("find"):
+            self.env["version"] = self.env["version"].replace(self.env.get("find"), replace)
+        split_on = self.env.get("split_on", " ")
+        index = self.env.get("index", 0)
+        self.env["version"] = self.env["version"].split(split_on)[index]
+        self.output("Version: %s" % self.env["version"])
 
 
 if __name__ == "__main__":
