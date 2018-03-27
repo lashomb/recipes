@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #
-# Copyright 2015 Elliot Jordan
+# Modified by Brian LaShomb (2018)
+# Based on 'VersionSplitter', Copyright Elliot Jordan 2015
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,10 +18,10 @@
 from autopkglib import Processor, ProcessorError
 
 
-__all__ = ["VersionSplitter"]
+__all__ = ["VersionRemix"]
 
 
-class VersionSplitter(Processor):
+class VersionRemix(Processor):
 
     """This processor splits version numbers and returns the specified index.
     By default, it splits using a space, and returns the first item.
@@ -78,5 +79,5 @@ class VersionSplitter(Processor):
 
 
 if __name__ == "__main__":
-    processor = VersionSplitter()
+    processor = VersionRemix()
     processor.execute_shell()
