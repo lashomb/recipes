@@ -48,7 +48,7 @@
         </dict>
         <dict>
           <key>Processor</key>
-          <string>VersionRemix</string>
+          <string>com.github.lashomb.VersionRemix/VersionRemix</string>
           <key>Arguments</key>
           <dict>
           	<key>find</key>
