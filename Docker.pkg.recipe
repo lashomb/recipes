@@ -7,7 +7,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Docker and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.chilcote.pkg.Docker</string>
+    <string>com.github.lashomb.pkg.Docker</string>
     <key>Input</key>
     <dict>
         <key>BUNDLE_ID</key>
