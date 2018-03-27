@@ -53,7 +53,7 @@
           <dict>
           	<key>find</key>
           	<string>"-ce-mac"</string>
-            <key>replace</key>
+            <key>substitute</key>
             <string>"."</string>
           </dict>
         </dict>
