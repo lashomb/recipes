@@ -7,7 +7,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Docker and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.lashomb.pkg.Docker</string>
+    <string>com.github.chilcote.pkg.Docker</string>
     <key>Input</key>
     <dict>
         <key>BUNDLE_ID</key>
@@ -47,15 +47,17 @@
             <string>Copier</string>
         </dict>
         <dict>
-          <key>Processor</key>
-          <string>com.github.lashomb.VersionRemix/VersionRemix</string>
-          <key>Arguments</key>
-          <dict>
-          	<key>find</key>
-          	<string>-ce-mac</string>
-            <key>replace</key>
-            <string>.</string>
-          </dict>
+            <key>Arguments</key>
+            <dict>
+                <key>find</key>
+                <string>-ce-mac</string>
+                <key>input_string</key>
+                <string>%version%</string>
+                <key>replace</key>
+                <string>.</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
         </dict>
           <dict>
             <key>Arguments</key>
