@@ -22,6 +22,8 @@
             <string>https://github.com/influxdata/telegraf/releases</string>
             <key>SEARCH_PATTERN</key>
             <string>(?P&lt;url&gt;telegraf-(?P&lt;version&gt;[0-9.]+)_%OS%\.dmg)</string>
+            <key>DOWNLOAD_URL</key>
+            <string>https://dl.influxdata.com/telegraf/releases</string>
         </dict>
         <key>MinimumVersion</key>
         <string>0.6.1</string>
@@ -44,7 +46,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>url</key>
-                    <string>%SEARCH_URL%/%match%</string>
+                    <string>%DOWNLOAD_URL%/%match%</string>
                     <key>filename</key>
                     <string>%NAME%-%version%-%ARCH%.dmg</string>
                 </dict>
