@@ -16,6 +16,9 @@
             -->
             <key>OS</key>
             <string></string>
+            <!-- USED BY MUNKI IN supported_architectures
+                Typically: arm64 or x86_64
+            -->
             <key>ARCH</key>
             <string></string>
             <key>SEARCH_URL</key>
